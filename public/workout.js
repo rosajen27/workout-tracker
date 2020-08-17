@@ -6,12 +6,19 @@ async function initWorkout() {
       .querySelector("a[href='/exercise?']")
       .setAttribute("href", `/exercise?id=${lastWorkout._id}`);
 
+    let totalDuration = 0;
+    for (i = 0; i < lastWorkout.exercises.length; i++) {
+      totalDuration = totalDuration + lastWorkout.exercises[i].duration;
+    }
+
     const workoutSummary = {
       date: formatDate(lastWorkout.day),
-      totalDuration: lastWorkout.totalDuration,
+      totalDuration: totalDuration,
       numExercises: lastWorkout.exercises.length,
       ...tallyExercises(lastWorkout.exercises)
     };
+
+    console.log(workoutSummary);
 
     renderWorkoutSummary(workoutSummary);
   } else {
@@ -27,6 +34,7 @@ function tallyExercises(exercises) {
       acc.totalReps = (acc.totalReps || 0) + curr.reps;
     } else if (curr.type === "cardio") {
       acc.totalDistance = (acc.totalDistance || 0) + curr.distance;
+      acc.totalDuration = (acc.totalDuration || 0) + curr.duration;
     }
     return acc;
   }, {});
