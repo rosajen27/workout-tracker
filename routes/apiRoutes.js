@@ -5,11 +5,11 @@ module.exports = function(app) {
     db.Workout.find({}).then(function(dbWorkouts) {
       res.json(dbWorkouts);
     });
-  });
+  }); 
 
   app.put("/api/workouts/:id", function(req, res) {
     let id = req.params.id;
-    db.Workout.updateOne(
+    db.Workout.findOneAndUpdate(
       { _id: id },
       { $push: { exercises: req.body } },
       function(error, success) {
@@ -25,7 +25,7 @@ module.exports = function(app) {
   app.post("/api/workouts", function(req, res) {
     console.log(req.body);
     db.Workout.create(req.body).then(function(dbWorkouts) {
-      db.Workout.updateOne(
+      db.Workout.findOneAndUpdate(
         { _id: dbWorkouts._id },
         { $push: { exercises: req.body } },
         function(error, success) {
