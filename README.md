@@ -15,9 +15,10 @@ A workout tracker that will allow the user to view, create, and track daily work
 
 ## Deployment
 
+Deployed Website: https://rosa-workout-tracker.herokuapp.com/
+
 ![workout-tracker.PNG](./public/assets/images/workout-tracker.PNG)
 
-Deployed Website:
 
 ## Built With
 
@@ -27,6 +28,7 @@ Deployed Website:
 * Mongo DB
 * Mongoose
 * Express
+* Node
 
 ## Installation 
 
