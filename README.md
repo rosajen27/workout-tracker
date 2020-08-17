@@ -17,7 +17,7 @@ A workout tracker that will allow the user to view, create, and track daily work
 
 Deployed Website: https://rosa-workout-tracker.herokuapp.com/
 
-![workout-tracker.PNG](./public/assets/images/workout-tracker.PNG)
+![workout-tracker.PNG](./public/workout-tracker.PNG)
 
 
 ## Built With
