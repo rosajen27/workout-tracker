@@ -30,6 +30,12 @@ Deployed Website:
 
 ## Installation 
 
+* npm i
+* npm i express
+* npm i mongoose
+* npm i morgan
+* npm i path
+* npm start
 
 ## Usage
 
