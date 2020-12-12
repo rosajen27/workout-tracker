@@ -6,7 +6,6 @@ A workout tracker that will allow the user to view, create, and track daily work
 ## Table of Contents
 * [Deployment](#deployment)
 * [Built With](#built-with)
-* [Installation](#installation)
 * [Usage](#usage)
 * [Authors](#authors)
 * [License](#license)
@@ -30,14 +29,6 @@ Deployed Website: https://rosa-workout-tracker.herokuapp.com/
 * Express
 * Node
 
-## Installation 
-
-* npm i
-* npm i express
-* npm i mongoose
-* npm i morgan
-* npm i path
-* npm start
 
 ## Usage
 
