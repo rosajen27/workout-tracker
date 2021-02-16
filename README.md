@@ -28,6 +28,7 @@ Deployed Website: https://rosa-workout-tracker.herokuapp.com/
 ![workout-tracker.PNG](./public/workout-tracker.png)
 ![workout-tracker.PNG](./public/workout-tracker2.png)
 ![workout-tracker.PNG](./public/workout-tracker3.png)
+![workout-tracker.PNG](./public/workout-tracker4.png)
 
 
 ## Built With
